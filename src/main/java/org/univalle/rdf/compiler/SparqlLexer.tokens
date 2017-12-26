@@ -1,0 +1,17 @@
+OPEN_PARENTHESIS=1
+CLOSE_PARENTHESIS=2
+PROJECT=3
+BGP=4
+TRIPLE=5
+LEFTJOIN=6
+UNION=7
+VARIABLE=8
+URIREF=9
+WS=10
+'('=1
+')'=2
+'project'=3
+'bgp'=4
+'triple'=5
+'leftjoin'=6
+'union'=7
