@@ -1,4 +1,4 @@
-// Generated from /Users/oscar/myapps/flink-java-rdf/src/main/java/org/univalle/rdf/compiler/Sparql.g4 by ANTLR 4.7
+// Generated from /Users/oscar/myapps/sparql-to-flink/src/main/java/org/univalle/rdf/compiler/Sparql.g4 by ANTLR 4.7
 package org.univalle.rdf.compiler;
 
 import java.util.List;
@@ -7,10 +7,8 @@ import java.util.ArrayList;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.misc.*;
 import org.antlr.v4.runtime.tree.*;
 import org.univalle.rdf.operators.*;
-
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class SparqlParser extends Parser {

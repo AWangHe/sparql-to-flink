@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/flink-java-rdf.iml" filepath="$PROJECT_DIR$/flink-java-rdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sparql-to-flink.iml" filepath="$PROJECT_DIR$/sparql-to-flink.iml" />
     </modules>
   </component>
 </project>

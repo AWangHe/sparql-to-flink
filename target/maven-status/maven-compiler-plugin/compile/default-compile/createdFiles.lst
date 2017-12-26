@@ -6,7 +6,6 @@ org/univalle/rdf/compiler/SparqlParser$GroupGraphPatternAContext.class
 org/univalle/rdf/runner/LoadTransformTriples.class
 org/univalle/rdf/compiler/SparqlListener.class
 org/univalle/rdf/operators/ASTNode.class
-org/univalle/rdf/App.class
 org/univalle/rdf/SparqlQueryToFlinkProgram.class
 org/univalle/rdf/compiler/SparqlLexer.class
 org/univalle/rdf/compiler/SparqlParser.class
@@ -14,6 +13,7 @@ org/univalle/rdf/operators/Project.class
 org/univalle/rdf/compiler/SparqlParser$ObjectContext.class
 org/univalle/rdf/compiler/SparqlParser$GroupGraphPatternBContext.class
 org/univalle/rdf/operators/TriplePattern.class
+org/univalle/rdf/TestGrammar.class
 org/univalle/rdf/operators/ObjectTerm.class
 org/univalle/rdf/compiler/SparqlParser$SubjectContext.class
 org/univalle/rdf/mapper/TranslationQueryToLQP.class

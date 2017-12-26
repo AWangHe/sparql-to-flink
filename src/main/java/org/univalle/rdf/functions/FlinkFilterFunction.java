@@ -3,9 +3,6 @@ package org.univalle.rdf.functions;
 import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.api.java.tuple.Tuple3;
 
-/**
- * Created by oscar on 7/27/17.
- */
 public class FlinkFilterFunction implements FilterFunction<Tuple3<String, String, String>> {
 
 	String subject, predicate, object = null;
