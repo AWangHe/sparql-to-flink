@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class TestGrammar {
 
-    public static final String INPUT_LQP="../data/lqp-to-flink/lqp-04.txt";
+    public static final String INPUT_LQP="/Users/oscar/myapps/data/lqp-to-flink/lqp-02a.txt";
 
     public static void main( String[] args )
     {

@@ -18,6 +18,10 @@ public class PredicateTerm implements ASTNode{
 	}
 
 	public String getTerm(){
-                return this.term;
-        }
+		return this.term;
+	}
+
+    public String getVarName() {
+        return getTerm().substring(1, getTerm().length());
+    }
 }
