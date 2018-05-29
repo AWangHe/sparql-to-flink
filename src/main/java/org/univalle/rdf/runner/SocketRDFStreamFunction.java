@@ -1,7 +1,7 @@
 package org.univalle.rdf.runner;
 
-import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.util.IOUtils;
+import org.apache.jena.graph.Triple;
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
 
@@ -18,7 +18,7 @@ import static org.apache.flink.util.Preconditions.checkNotNull;
 import org.apache.flink.streaming.api.functions.source.SourceFunction;
 
 
-public class SocketRDFStreamFunction implements SourceFunction<Tuple3<String, String, String>>, Serializable {
+public class SocketRDFStreamFunction implements SourceFunction<Triple>, Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -60,7 +60,7 @@ public class SocketRDFStreamFunction implements SourceFunction<Tuple3<String, St
 	}
 
 	@Override
-	public void run(SourceContext<Tuple3<String, String, String>> ctx) throws Exception{
+	public void run(SourceContext<Triple> ctx) throws Exception{
 		//while(isRunning){
 			try(Socket socket = new Socket()){
 				currentSocket = socket;

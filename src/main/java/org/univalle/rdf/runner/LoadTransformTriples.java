@@ -22,7 +22,6 @@ import org.apache.flink.annotation.PublicEvolving;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.operators.DataSource;
-import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Preconditions;
@@ -67,21 +66,20 @@ public class LoadTransformTriples {
 	 * @return A {@link DataSet} that represents the data read from the given file as text lines.
 	 */
 
-	public static DataSource<Tuple3<String, String, String>> loadTriplesFromDataset(ExecutionEnvironment environment, String filePath) {
+	public static DataSource<Triple> loadTriplesFromDataset(ExecutionEnvironment environment, String filePath) {
 		Preconditions.checkNotNull(filePath, "The file path may not be null.");
 
 		Model model = FileManager.get().loadModel(filePath, null, "TURTLE");
 		List<Statement> statements = model.listStatements().toList();
 
-		List<Tuple3<String, String, String>> dataset = new ArrayList<>();
+		List<Triple> dataset = new ArrayList<>();
 		for (Statement s : statements) {
-			Triple in = s.asTriple();
-			dataset.add(new Tuple3<>(in.getSubject().toString(), in.getPredicate().toString(), in.getObject().toString()));
+			Triple t = s.asTriple();
+			dataset.add(s.asTriple());
 		}
 
 		return environment.fromCollection(dataset);
 	}
-
 
     /**
      * Creates a new data stream that contains the triples received infinitely from a socket. Received strings are
@@ -99,17 +97,17 @@ public class LoadTransformTriples {
      */
 
     @PublicEvolving
-    public static DataStreamSource<Tuple3<String, String, String>> loadTriplesFromStream(StreamExecutionEnvironment environment, String hostname, int port, char delimiter, long maxRetry) {
+    public static DataStreamSource<Triple> loadTriplesFromStream(StreamExecutionEnvironment environment, String hostname, int port, char delimiter, long maxRetry) {
         return environment.addSource(new SocketRDFStreamFunction(hostname, port, delimiter, maxRetry), "Socket RDF Stream");
     }
 
     @PublicEvolving
-    public static DataStreamSource<Tuple3<String, String, String>> loadTriplesFromStream(StreamExecutionEnvironment environment, String hostname, int port, char delimiter) {
+    public static DataStreamSource<Triple> loadTriplesFromStream(StreamExecutionEnvironment environment, String hostname, int port, char delimiter) {
         return loadTriplesFromStream(environment, hostname, port, delimiter, 0);
     }
 
     @PublicEvolving
-    public static DataStreamSource<Tuple3<String, String, String>> loadTriplesFromStream(StreamExecutionEnvironment environment, String hostname, int port) {
+    public static DataStreamSource<Triple> loadTriplesFromStream(StreamExecutionEnvironment environment, String hostname, int port) {
         System.out.println("inside socketRDFStream method..\n");
         return loadTriplesFromStream(environment, hostname, port, '\n');
     }

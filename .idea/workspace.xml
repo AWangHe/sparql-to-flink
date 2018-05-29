@@ -7,45 +7,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="869e9e5d-57f7-4260-ad76-92fb184d69fc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/SolutionMapping.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/sparql_to_flink_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_58_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_abego_treelayout_org_abego_treelayout_core_1_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_ST4_4_0_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_4_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_json_1_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Query1b.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/SparqlQueryToFlinkProgram.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/TestGrammar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/Sparql.g4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/Sparql.tokens" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlBaseListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlLexer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlLexer.tokens" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlParser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkFilterFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkJoinFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkLeftOuterJoinFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/CreateJavaFlinkProgram.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/LoadQueryFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TransformLQPToFP.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TranslationQueryToLQP.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ASTNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Bgp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/LeftJoinUnion.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ObjectTerm.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Operator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/PredicateTerm.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Project.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/SubjectTerm.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplePattern.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplesBlock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/SparqlQueryToFlinkProgram.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/TestGrammar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlBaseListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlLexer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$GroupGraphPatternAContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$GroupGraphPatternBContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$LqpContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$ObjectContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$OperatorContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$PredicateContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$SelectQueryContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$SubjectContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$TriplePatternContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$TriplesBlockContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$WhereClauseContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/functions/FlinkFilterFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/functions/FlinkJoinFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/functions/FlinkLeftOuterJoinFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/mapper/CreateJavaFlinkProgram.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/mapper/LoadQueryFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/mapper/TransformLQPToFP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/mapper/TranslationQueryToLQP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/ASTNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/Bgp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/LeftJoinUnion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/ObjectTerm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/Operator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/PredicateTerm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/Project.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/SubjectTerm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/TriplePattern.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/TriplesBlock.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/sparql_to_flink_jar/sparql-to-flink.jar" afterPath="$PROJECT_DIR$/out/artifacts/sparql_to_flink_jar/sparql-to-flink.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/TestGrammar.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/TestGrammar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlLexer.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlLexer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$GroupGraphPatternAContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$GroupGraphPatternAContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$GroupGraphPatternBContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$GroupGraphPatternBContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$LqpContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$LqpContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$ObjectContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$ObjectContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$OperatorContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$OperatorContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$PredicateContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$PredicateContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$SelectQueryContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$SelectQueryContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$SubjectContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$SubjectContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$TriplePatternContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$TriplePatternContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$TriplesBlockContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$TriplesBlockContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$WhereClauseContext.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser$WhereClauseContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/compiler/SparqlParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/ASTNode.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/ASTNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/Bgp.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/Bgp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/ObjectTerm.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/ObjectTerm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/PredicateTerm.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/PredicateTerm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/Project.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/Project.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/SubjectTerm.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/SubjectTerm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/TriplePattern.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/TriplePattern.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/TriplesBlock.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/operators/TriplesBlock.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/runner/LoadTransformTriples.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/runner/LoadTransformTriples.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/runner/SocketRDFStreamFunction.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/runner/SocketRDFStreamFunction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/univalle/rdf/runner/SourceContextAdapter.class" afterPath="$PROJECT_DIR$/target/classes/org/univalle/rdf/runner/SourceContextAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/TestGrammar.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/TestGrammar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlLexer.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlParser.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ASTNode.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ASTNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Bgp.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Bgp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ObjectTerm.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ObjectTerm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/PredicateTerm.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/PredicateTerm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Project.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Project.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/SubjectTerm.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/SubjectTerm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplesBlock.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplesBlock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sparql-to-flink.iml" afterPath="$PROJECT_DIR$/sparql-to-flink.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/LoadTransformTriples.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/LoadTransformTriples.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/SocketRDFStreamFunction.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/SocketRDFStreamFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/SourceContextAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/SourceContextAdapter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,65 +100,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SparqlQueryToFlinkProgram.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/SparqlQueryToFlinkProgram.java">
+      <file leaf-file-name="ConvertLQP2FP.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/ConvertLQP2FP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadQueryFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/LoadQueryFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransformLQPToFP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TransformLQPToFP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-121">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TranslationQueryToLQP.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TranslationQueryToLQP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestGrammar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/TestGrammar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="14" column="87" lean-forward="false" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+            <state relative-caret-position="1223">
+              <caret line="151" column="58" lean-forward="false" selection-start-line="151" selection-start-column="58" selection-end-line="151" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>variablesSM</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>solutionMapping</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,24 +138,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/SparqlQueryToFlinkProgram.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TranslationQueryToLQP.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/LoadQueryFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkLeftOuterJoinFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkJoinFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkFilterFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlLexer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/SubjectTerm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/PredicateTerm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ObjectTerm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplePattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplesBlock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Bgp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ASTNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Project.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/TestGrammar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/filter_operators/Equals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/filter_operators/NotEquals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/VariablesSM.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/ConvertTriplePattern.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/Sparql2Flink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/ExecuteSQ.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/SolutionMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/SM2SM_FF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/SM2SM_GRF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/SM2SM_MF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/SM_DKS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/SM_JF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/SM_JKS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/SolutionMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/T2SM_MF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/T2T_FF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/SM_FF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/ConvertTriplePatternGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/FilterConvert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/T2T_FF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/T2SM_MF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_JKS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_JF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_DKS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM2SM_MF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM2SM_FF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/Equals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/FilterConvert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/GreaterThan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/GreaterThanOrEqual.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/LessThan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/LessThanOrEqual.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/NotEquals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_OKS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_LOJF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/LoadTransformTriples.java" />
+        <option value="$PROJECT_DIR$/src/Ex003.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/Sparql2Flink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/Ex003.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/Ex003b.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/CreateFPFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_Double.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_Float.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_Integer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_Long.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_String.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SolutionMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TransformLQP2FP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/ConvertLQP2FP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/Ex146.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/Ex151.java" />
       </list>
     </option>
   </component>
@@ -178,7 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -190,6 +233,17 @@
             <path>
               <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
               <item name="sparql-to-flink" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparql-to-flink" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparql-to-flink" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -212,24 +266,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rdf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sparql-to-flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rdf" type="462c0819:PsiDirectoryNode" />
-              <item name="compiler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sparql-to-flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rdf" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
@@ -247,7 +283,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rdf" type="462c0819:PsiDirectoryNode" />
-              <item name="operators" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
@@ -257,6 +293,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rdf" type="462c0819:PsiDirectoryNode" />
               <item name="runner" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparql-to-flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rdf" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
@@ -301,7 +349,7 @@
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="univalle" type="462c0819:PsiDirectoryNode" />
               <item name="rdf" type="462c0819:PsiDirectoryNode" />
-              <item name="compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
@@ -311,6 +359,7 @@
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="univalle" type="462c0819:PsiDirectoryNode" />
               <item name="rdf" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
               <item name="functions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,17 +370,9 @@
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="univalle" type="462c0819:PsiDirectoryNode" />
               <item name="rdf" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sparql-to-flink" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="univalle" type="462c0819:PsiDirectoryNode" />
-              <item name="rdf" type="462c0819:PsiDirectoryNode" />
-              <item name="operators" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sparql-to-flink" type="b2602c69:ProjectViewProjectNode" />
@@ -342,13 +383,14 @@
               <item name="univalle" type="462c0819:PsiDirectoryNode" />
               <item name="rdf" type="462c0819:PsiDirectoryNode" />
               <item name="runner" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,6 +403,10 @@
     <property name="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/Sparql.g4::/lib-dir" value="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler" />
     <property name="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/Sparql.g4::/gen-listener" value="true" />
     <property name="$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/Sparql.g4::/gen-visitor" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="sparql-to-flink" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -374,15 +420,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SparqlQueryToFlinkProgram">
-    <configuration name="SparqlQueryToFlinkProgram (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Ex151">
+    <configuration name="Ex146" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="org.univalle.rdf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="org.univalle.rdf.SparqlQueryToFlinkProgram" />
+      <option name="MAIN_CLASS_NAME" value="org.univalle.rdf.Ex146" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -391,19 +437,38 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
+      <module name="sparql-to-flink" />
       <envs />
     </configuration>
-    <configuration name="SparqlQueryToFlinkProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Ex151" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="org.univalle.rdf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="org.univalle.rdf.SparqlQueryToFlinkProgram" />
+      <option name="MAIN_CLASS_NAME" value="org.univalle.rdf.Ex151" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="sparql-to-flink" />
+      <envs />
+    </configuration>
+    <configuration name="Sparql2Flink" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.univalle.rdf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.univalle.rdf.Sparql2Flink" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../data/queries/query1b.rq $PROJECT_DIR$/../data/data.ttl" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../data/sparql-book/queries/ex151.rq $PROJECT_DIR$/../data/sparql-book/datasets/ex145.ttl" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -413,17 +478,17 @@
       <module name="sparql-to-flink" />
       <envs />
     </configuration>
-    <configuration name="TestGrammar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SparqlToFlink" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.univalle.rdf.*" />
+          <option name="PATTERN" value="org.univalle.ooca.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="org.univalle.rdf.TestGrammar" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="org.univalle.ooca.SparqlToFlink" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../data/sparql-book/queries/ex010.rq $PROJECT_DIR$/../data/sparql-book/datasets/ex002.ttl" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -525,16 +590,17 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.SparqlQueryToFlinkProgram" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TestGrammar" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SparqlQueryToFlinkProgram (1)" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Application.SparqlToFlink" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Sparql2Flink" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Ex146" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Ex151" />
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.SparqlQueryToFlinkProgram" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestGrammar" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SparqlQueryToFlinkProgram (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Ex151" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Ex146" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Sparql2Flink" />
       </list>
     </recent_temporary>
   </component>
@@ -568,13 +634,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53758866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39574468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28683385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28605017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -594,429 +660,272 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/SparqlQueryToFlinkProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/TestGrammar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="87" lean-forward="false" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/SparqlQueryToFlinkProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/TestGrammar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="87" lean-forward="false" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/SparqlQueryToFlinkProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/TestGrammar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="87" lean-forward="false" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/Sparql.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkJoinFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkLeftOuterJoinFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="134" lean-forward="false" selection-start-line="6" selection-start-column="134" selection-end-line="6" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/SparqlQueryToFlinkProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Bgp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplesBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplePattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1453#1454#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkFilterFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TransformLQPToFP.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/SparqlQueryToFlinkProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TranslationQueryToLQP.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/App.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/LeftJoinUnion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlBaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/CreateJavaFlinkProgram.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4137">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/org/univalle/rdf/mapper/TranslationQueryToLQP.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/Sparql.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="75" column="37" lean-forward="false" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkJoinFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkLeftOuterJoinFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="134" lean-forward="false" selection-start-line="6" selection-start-column="134" selection-end-line="6" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/FlinkFilterFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ObjectTerm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/PredicateTerm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/SubjectTerm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplePattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1453#1454#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/TriplesBlock.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/ConvertTriplePattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-          </folding>
+          <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Bgp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/functions/SolutionMapping.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/SolutionMapping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+        <state relative-caret-position="525">
+          <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ex015.java" />
+    <entry file="file://$PROJECT_DIR$/src/Ex061.java" />
+    <entry file="file://$PROJECT_DIR$/src/Ex088.java" />
+    <entry file="file://$PROJECT_DIR$/src/Ex101.java" />
+    <entry file="file://$PROJECT_DIR$/src/Ex228c.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/T2T_FF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/T2SM_MF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_JKS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_JF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_DKS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM2SM_MF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM2SM_FF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/GreaterThanOrEqual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/LessThan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/LessThanOrEqual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/NotEquals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_LOJF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SM_OKS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/GreaterThan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/Equals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sparql2Flink.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Sparql2Flink.java" />
+    <entry file="file://$PROJECT_DIR$/src/Ex003.java" />
+    <entry file="file://$PROJECT_DIR$/target/classes/org/univalle/rdf/runner/LoadTransformTriples.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/LoadSQFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/ASTNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/ExecuteSQ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="74" lean-forward="false" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#188#218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/operators/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/TestGrammar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="87" lean-forward="false" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+        <state relative-caret-position="345">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/compiler/SparqlParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TranslationSQ2LQP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1221">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10882#10896#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/ConvertTriplePatternGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/Ex001b.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/Ex001.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/Sparql2Flink.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/Ex003b.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/Ex003.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/CreateFPFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="107" lean-forward="false" selection-start-line="25" selection-start-column="107" selection-end-line="25" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/filter/FilterConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_Float.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/order/SM_OKS_String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/functions/SolutionMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-461">
+          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TransformLQP2FP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="32" column="115" lean-forward="false" selection-start-line="32" selection-start-column="115" selection-end-line="32" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/Ex151.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/Ex146.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/Sparql2Flink.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/SocketRDFStreamFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/runner/LoadTransformTriples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+        <state relative-caret-position="40">
+          <caret line="80" column="51" lean-forward="false" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/SparqlQueryToFlinkProgram.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/ConvertLQP2FP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/LoadQueryFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TransformLQPToFP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/univalle/rdf/mapper/TranslationQueryToLQP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1223">
+          <caret line="151" column="58" lean-forward="false" selection-start-line="151" selection-start-column="58" selection-end-line="151" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
