@@ -13,7 +13,7 @@ public class SM2SM_MF implements MapFunction<SolutionMapping, SolutionMapping> {
 
     @Override
     public SolutionMapping map(SolutionMapping sm){
-        return sm.project(vars);
+        return sm.newSolutionMapping(vars);
     }
 }
 

@@ -22,16 +22,19 @@ public class LessThanOrEqual{
 
 	public boolean eval(HashMap<String, Node> solutionMapping){
 		Boolean flag = false;
-
-		Node value_left = solutionMapping.get(arg1.toString());
+		Node value_left = null;
 		Node value_right = null;
-		if (arg2.isConstant()) {
-			value_right = arg2.getConstant().getNode();
-		} else if (arg2.isVariable()) {
-			value_right = solutionMapping.get(arg2.toString());
-		}
 
-		//System.out.println("LessThanOrEqual: " + arg1.toString() + "--" + arg2.toString() + " **** " + value_left + " < " + value_right);
+		if(arg1.isConstant() && arg2.isVariable()) {
+			value_left = arg1.getConstant().getNode();
+			value_right = solutionMapping.get(arg2.toString());
+		} else if(arg1.isVariable() && arg2.isConstant()) {
+			value_left = solutionMapping.get(arg1.toString());
+			value_right = arg2.getConstant().getNode();
+		} else if(arg1.isVariable() && arg2.isVariable()) {
+			value_left = solutionMapping.get(arg1.toString());
+			value_right = solutionMapping.get(arg1.toString());
+		}
 
 		if (value_left.getLiteralDatatype().getJavaClass().equals(BigDecimal.class)) {
 			if (Double.parseDouble(value_left.getLiteralValue().toString()) <= Double.parseDouble(value_right.getLiteralValue().toString())) {

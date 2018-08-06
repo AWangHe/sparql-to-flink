@@ -15,23 +15,35 @@ public class Equals{
 	}
 
 	public boolean eval(HashMap<String, Node> solutionMapping){
+
 		Boolean flag = false;
-
-		Node value_left = solutionMapping.get(arg1.toString());
+		Node value_left = null;
 		Node value_right = null;
-		if (arg2.isConstant()) {
-			value_right = arg2.getConstant().getNode();
-		} else if (arg2.isVariable()) {
+
+		if(arg1.isConstant() && arg2.isVariable()) {
+			value_left = arg1.getConstant().getNode();
 			value_right = solutionMapping.get(arg2.toString());
+		} else if(arg1.isVariable() && arg2.isConstant()) {
+			value_left = solutionMapping.get(arg1.toString());
+			value_right = arg2.getConstant().getNode();
+		} else if(arg1.isVariable() && arg2.isVariable()) {
+			value_left = solutionMapping.get(arg1.toString());
+			value_right = solutionMapping.get(arg1.toString());
 		}
 
-		//System.out.println("Equals: " + arg1.toString() + "--" + arg2.toString() + " **** " + value_left + " = " + value_right);
+        if(value_left.isLiteral()) {
+            if (value_left.getLiteralValue().toString().equals(value_right.getLiteralValue().toString())) {
+                //System.out.println("--- they are Equals ---");
+                flag = true;
+            }
+        } else if(value_left.isURI()) {
+            if (!(value_left.toString().equals(value_right.toString()))) {
+                //System.out.println("--- they are Equals ---");
+                flag = true;
+            }
+        }
 
-		if (value_left.getLiteralValue().toString().equals(value_right.getLiteralValue().toString())) {
-			//System.out.println("--- they are Equals ---");
-			flag = true;
-		}
 
-		return flag;
+        return flag;
 	}
 }

@@ -18,7 +18,7 @@ public class ConvertTriplePattern {
                 obj = node.toString();
             }
         } else if (node.isURI()) {
-            obj = node.getURI().toString();
+            obj = "\"" + node.getURI().toString() + "\"";
         }
         return obj;
     }

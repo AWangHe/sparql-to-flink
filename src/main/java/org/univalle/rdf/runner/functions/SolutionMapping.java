@@ -26,65 +26,82 @@ public class SolutionMapping {
 		mapping.put(var, val);
 	}
 
-	public Node getValue(String var){ //Revisar ... se puede simplificar
-		/*String v = null;
-		for (Map.Entry<String, Node> m : mapping.entrySet()) {
-			if (m.getKey().equals(var)) {
-				v = m.getValue().toString();
-			}
-		}
-		return v;*/
+	public Node getValue(String var){
 		return mapping.get(var);
 	}
 
 	public boolean existMapping(String var, Node val){
 		Boolean flag = false;
-		//for (Map.Entry<String, Node> hm : mapping.entrySet()) {
-			//if(hm.getKey().equals(var) && hm.getValue().equals(val)) {
-			if(mapping.containsKey(var)) {
-				if(mapping.get(var).equals(val)) {
-					flag = true;
-					//break;
-				}
-			}
-		//}
+        if(mapping.containsKey(var)) {
+            if(mapping.get(var).equals(val)) {
+                flag = true;
+            }
+        }
 		return flag;
 	}
 
-	public SolutionMapping union(SolutionMapping sm){
-		if(sm != null) {
-			for (Map.Entry<String, Node> hm : sm.getMapping().entrySet()) {
-				if (!existMapping(hm.getKey(), hm.getValue())) {
-					this.putMapping(hm.getKey(), hm.getValue());
-				}
-			}
-		}
+	public SolutionMapping join(SolutionMapping sm){
+        for (Map.Entry<String, Node> hm : sm.getMapping().entrySet()) {
+            if (!existMapping(hm.getKey(), hm.getValue())) {
+                this.putMapping(hm.getKey(), hm.getValue());
+            }
+        }
 		return this;
 	}
 
-	public SolutionMapping project(String[] vars){
+    public SolutionMapping leftJoin(SolutionMapping sm) {
+        if(sm != null) {
+            for (Map.Entry<String, Node> hm : sm.getMapping().entrySet()) {
+                if (!existMapping(hm.getKey(), hm.getValue())) {
+                    this.putMapping(hm.getKey(), hm.getValue());
+                }
+            }
+        }
+        return this;
+    }
+
+	public SolutionMapping newSolutionMapping(String[] vars){
 		SolutionMapping sm = new SolutionMapping();
 		for (String var : vars) {
-			for (Map.Entry<String, Node> hm : this.getMapping().entrySet()) {
-				if(hm.getKey().equals(var)) {
-					sm.putMapping(hm.getKey(), hm.getValue());
-					break;
-				}
-			}
+            if(var != null) {
+                sm.putMapping(var, mapping.get(var));
+            }
 		}
 		return sm;
 	}
+
+    public SolutionMapping project(String[] vars){
+        SolutionMapping sm = new SolutionMapping();
+        for (String var : vars) {
+            if(mapping.containsKey(var)) {
+                sm.putMapping(var, mapping.get(var));
+            }
+        }
+        return sm;
+    }
 
 	public boolean filter(String expression){
 		Expr expr = SSE.parseExpr(expression);
 		return FilterConvert.convert(expr, this.getMapping());
 	}
 
+	public SolutionMapping distinct(String[] vars){
+        SolutionMapping sm = new SolutionMapping();
+        for (String var : vars) {
+            if(mapping.containsKey(var)) {
+                sm.putMapping(var, mapping.get(var));
+            }
+        }
+        return sm;
+	}
+
 	@Override
 	public String toString() {
 		String sm="";
 		for (Map.Entry<String, Node> hm : mapping.entrySet()) {
-			sm += hm.getKey() + "-->" + hm.getValue().toString() + "\t";
+		    if(hm.getValue() != null) {
+                sm += hm.getKey() + "-->" + hm.getValue().toString() + "\t";
+            }
 		}
 		return sm;
 	}

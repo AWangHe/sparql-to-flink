@@ -22,12 +22,14 @@ public class ConvertLQP2FP extends OpVisitorBase {
 
     @Override
     public void visit(OpBGP opBGP) {
+        //System.out.println("OpBGP");
         List<Triple> listTriplePatterns = opBGP.getPattern().getList();
         fp += ConvertTriplePatternGroup.convert(listTriplePatterns);
     }
 
     @Override
     public void visit(OpJoin opJoin) {
+        //System.out.println("OpJoin");
         Op opLeft = opJoin.getLeft();
         Op opRight = opJoin.getRight();
 
@@ -39,19 +41,28 @@ public class ConvertLQP2FP extends OpVisitorBase {
 
         int indice_sm_join = SolutionMapping.getIndice();
 
-        String key = SolutionMapping.getKey(indice_sm_left, indice_sm_right);
+        ArrayList<String> listKeys = SolutionMapping.getKey(indice_sm_left, indice_sm_right);
 
-        fp += "\t\tDataSet<SolutionMapping> sm"+indice_sm_join+" = sm"+indice_sm_left+".join(sm"+indice_sm_right+")\n" +
-                "\t\t\t.where(new SM_JKS("+key+"))\n" +
-                "\t\t\t.equalTo(new SM_JKS("+key+"))\n" +
-                "\t\t\t.with(new SM_JF("+key+"));" +
-                "\n\n";
+        if(listKeys.size()>0) {
+            String keys = JoinKeys.keys(listKeys);
+            fp += "\t\tDataSet<SolutionMapping> sm" + indice_sm_join + " = sm" + indice_sm_left + ".join(sm" + indice_sm_right + ")\n" +
+                    "\t\t\t.where(new SM_JKS(new String[]{"+keys+"}))\n" +
+                    "\t\t\t.equalTo(new SM_JKS(new String[]{"+keys+"}))\n" +
+                    "\t\t\t.with(new SM_JF());" +
+                    "\n\n";
+        }
+        else {
+            fp += "\t\tDataSet<SolutionMapping> sm" + indice_sm_join + " = sm" + indice_sm_left + ".cross(sm" + indice_sm_right + ")\n" +
+                    "\t\t\t.with(new SM_CF());" +
+                    "\n\n";
+            }
 
         SolutionMapping.join(indice_sm_join, indice_sm_left, indice_sm_right);
     }
 
     @Override
     public void visit(OpLeftJoin opLeftJoin) {
+        //System.out.println("OpLeftJoin");
         Op opLeft = opLeftJoin.getLeft();
         Op opRight = opLeftJoin.getRight();
 
@@ -63,19 +74,32 @@ public class ConvertLQP2FP extends OpVisitorBase {
 
         int indice_sm_join = SolutionMapping.getIndice();
 
-        String key = SolutionMapping.getKey(indice_sm_left, indice_sm_right);
+        ArrayList<String> listKeys = SolutionMapping.getKey(indice_sm_left, indice_sm_right);
 
-        fp += "\t\tDataSet<SolutionMapping> sm"+indice_sm_join+" = sm"+indice_sm_left+".leftOuterJoin(sm"+indice_sm_right+")\n" +
-                "\t\t\t.where(new SM_JKS("+key+"))\n" +
-                "\t\t\t.equalTo(new SM_JKS("+key+"))\n" +
-                "\t\t\t.with(new SM_LOJF("+key+"));" +
-                "\n\n";
+        if(listKeys.size()>0) {
+            String keys = JoinKeys.keys(listKeys);
+            fp += "\t\tDataSet<SolutionMapping> sm" + indice_sm_join + " = sm" + indice_sm_left + ".leftOuterJoin(sm" + indice_sm_right + ")\n" +
+                    "\t\t\t.where(new SM_JKS(new String[]{"+keys+"}))\n" +
+                    "\t\t\t.equalTo(new SM_JKS(new String[]{"+keys+"}))\n" +
+                    "\t\t\t.with(new SM_LOJF());" +
+                    "\n\n";
+        }
+        else {
+            fp += "\t\tDataSet<SolutionMapping> sm"+indice_sm_join+" = sm"+indice_sm_left+".cross(sm"+indice_sm_right+")\n" +
+                    "\t\t\t.with(new SM_CF());" +
+                    "\n\n";
+        }
 
         SolutionMapping.join(indice_sm_join, indice_sm_left, indice_sm_right);
+
+        if(opLeftJoin.getExprs() != null) {
+            this.visit(opLeftJoin.getExprs());
+        }
     }
 
     @Override
     public void visit(OpUnion opUnion) {
+        //System.out.println("OpUnion");
         Op opLeft = opUnion.getLeft();
         Op opRight = opUnion.getRight();
 
@@ -95,6 +119,7 @@ public class ConvertLQP2FP extends OpVisitorBase {
 
     @Override
     public void visit(OpProject opProject) {
+        //System.out.println("OpProject");
         ArrayList<String> variables = new ArrayList<>();
 
         String varsProject = "";
@@ -111,13 +136,14 @@ public class ConvertLQP2FP extends OpVisitorBase {
         opProject.getSubOp().visit(this);
 
         fp += "\t\tDataSet<SolutionMapping> sm"+(SolutionMapping.getIndice())+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
-                "\t\t\t.map(new SM2SM_MF(new String[]{"+varsProject+"}));\n\n";
+                "\t\t\t.map(new SM2SM_PF(new String[]{"+varsProject+"}));\n\n";
 
         SolutionMapping.insertSolutionMapping(SolutionMapping.getIndice(), variables);
     }
 
     @Override
     public void visit(OpFilter opFilter) {
+        //System.out.println("OpFilter");
         ExprList exprList = opFilter.getExprs();
         opFilter.getSubOp().visit(this);
         for ( Expr expression : exprList ) {
@@ -130,8 +156,21 @@ public class ConvertLQP2FP extends OpVisitorBase {
         }
     }
 
+    public void visit(ExprList exprList) {
+        //System.out.println("ExprList");
+        for ( Expr expression : exprList ) {
+            fp += "\t\tDataSet<SolutionMapping> sm"+(SolutionMapping.getIndice())+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
+                    "\t\t\t.filter(new SM2SM_FF(\""+FilterConvert.convert(expression)+"\"));\n\n";
+
+            ArrayList<String> variables = SolutionMapping.getSolutionMapping().get(SolutionMapping.getIndice()-1);
+
+            SolutionMapping.insertSolutionMapping(SolutionMapping.getIndice(), variables);
+        }
+    }
+
     @Override
     public void visit(OpDistinct opDistinct) {
+        //System.out.println("OpDistinct");
         opDistinct.getSubOp().visit(this);
 
         fp += "\t\tDataSet<SolutionMapping> sm"+(SolutionMapping.getIndice())+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
@@ -144,6 +183,7 @@ public class ConvertLQP2FP extends OpVisitorBase {
 
     @Override
     public void visit(OpOrder opOrder) {
+        //System.out.println("OpOrder");
         List<SortCondition> sortCondition = opOrder.getConditions();
 
         String order="";
@@ -158,27 +198,33 @@ public class ConvertLQP2FP extends OpVisitorBase {
         Expr expression = sortCondition.get(0).getExpression();
 
         fp += "\t\tDataSet<SolutionMapping> sm"+SolutionMapping.getIndice()+";\n" +
-                "\t\tRDFDatatype node = sm"+(SolutionMapping.getIndice()-1)+".collect().get(0).getValue(\""+expression+"\").getLiteralDatatype();\n" +
-                "\t\tif(node.getJavaClass().equals(BigDecimal.class) || node.getJavaClass().equals(Double.class)){\n" +
-                "\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
-                "\t\t\t\t.sortPartition(new SM_OKS_Double(\""+expression+"\"), "+order+")\n" +
-                "\t\t\t\t.setParallelism(1);\n" +
-                "\t\t} else if (node.getJavaClass().equals(BigInteger.class) || node.getJavaClass().equals(Integer.class)) {\n" +
-                "\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
-                "\t\t\t\t.sortPartition(new SM_OKS_Integer(\""+expression+"\"), "+order+")\n" +
-                "\t\t\t\t.setParallelism(1);\n" +
-                "\t\t} else if (node.getJavaClass().equals(Float.class)) {\n" +
-                "\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
-                "\t\t\t\t.sortPartition(new SM_OKS_Float(\""+expression+"\"), "+order+")\n" +
-                "\t\t\t\t.setParallelism(1);\n" +
-                "\t\t} else if (node.getJavaClass().equals(Long.class)){\n" +
-                "\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
-                "\t\t\t\t.sortPartition(new SM_OKS_Long(\""+expression+"\"), "+order+")\n" +
-                "\t\t\t\t.setParallelism(1);\n" +
+                "\t\tNode node = sm"+(SolutionMapping.getIndice()-1)+".collect().get(0).getValue(\""+expression+"\");\n" +
+                "\t\tif(node.isLiteral()) {\n" +
+                "\t\t\tif(node.getLiteralValue().getClass().equals(BigDecimal.class) || node.getLiteralValue().getClass().equals(Double.class)){\n" +
+                "\t\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
+                "\t\t\t\t\t.sortPartition(new SM_OKS_Double(\""+expression+"\"), "+order+")\n" +
+                "\t\t\t\t\t.setParallelism(1);\n" +
+                "\t\t\t} else if (node.getLiteralValue().getClass().equals(BigInteger.class) || node.getLiteralValue().getClass().equals(Integer.class)) {\n" +
+                "\t\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
+                "\t\t\t\t\t.sortPartition(new SM_OKS_Integer(\""+expression+"\"), "+order+")\n" +
+                "\t\t\t\t\t.setParallelism(1);\n" +
+                "\t\t\t} else if (node.getLiteralValue().getClass().equals(Float.class)) {\n" +
+                "\t\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
+                "\t\t\t\t\t.sortPartition(new SM_OKS_Float(\""+expression+"\"), "+order+")\n" +
+                "\t\t\t\t\t.setParallelism(1);\n" +
+                "\t\t\t} else if (node.getLiteralValue().getClass().equals(Long.class)){\n" +
+                "\t\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
+                "\t\t\t\t\t.sortPartition(new SM_OKS_Long(\""+expression+"\"), "+order+")\n" +
+                "\t\t\t\t\t.setParallelism(1);\n" +
+                "\t\t\t} else {\n" +
+                "\t\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
+                "\t\t\t\t\t.sortPartition(new SM_OKS_String(\""+expression+"\"), "+order+")\n" +
+                "\t\t\t\t\t.setParallelism(1);\n" +
+                "\t\t\t}\n" +
                 "\t\t} else {\n" +
-                "\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
-                "\t\t\t\t.sortPartition(new SM_OKS_String(\""+expression+"\"), "+order+")\n" +
-                "\t\t\t\t.setParallelism(1);\n" +
+                "\t\t\t\tsm"+SolutionMapping.getIndice()+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
+                "\t\t\t\t\t.sortPartition(new SM_OKS_String(\""+expression+"\"), "+order+")\n" +
+                "\t\t\t\t\t.setParallelism(1);\n" +
                 "\t\t}\n\n";
 
         ArrayList<String> variables = SolutionMapping.getSolutionMapping().get(SolutionMapping.getIndice()-1);
@@ -189,6 +235,7 @@ public class ConvertLQP2FP extends OpVisitorBase {
 
     @Override
     public void visit(OpSlice opSlice) {
+        //System.out.println("OpSlice");
         opSlice.getSubOp().visit(this);
 
         fp += "\t\tDataSet<SolutionMapping> sm"+(SolutionMapping.getIndice())+" = sm"+(SolutionMapping.getIndice()-1)+"\n" +
@@ -202,5 +249,4 @@ public class ConvertLQP2FP extends OpVisitorBase {
     public static String getFp(){
         return fp;
     }
-
 }

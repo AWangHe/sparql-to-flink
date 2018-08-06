@@ -22,7 +22,6 @@ public class T2T_FF implements FilterFunction<Triple> {
 				flag = true;
 			}
 		} else if (node.isURI()) {
-			System.out.println("isURI: " + node.toString() + " -- " + object);
 			if (node.toString().equals(object)) {
 				flag = true;
 			}

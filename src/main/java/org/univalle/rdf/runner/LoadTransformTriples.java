@@ -59,23 +59,23 @@ public class LoadTransformTriples {
 	/**
 	 * RDF Dataset (.nt) Input Format
 	 *
-	 * Creates a {@link DataSet} that represents RDF produced by reading the given .nt file line wise.
+	 * Creates a {@link DataSet} that represents RDF produced by reading the given .ttl file line wise.
 	 * The file will be read with the system's default character set.
 	 *
 	 * @param filePath The path of the file, as a URI (e.g., "file:///some/local/file" or "hdfs://host:port/file/path").
 	 * @return A {@link DataSet} that represents the data read from the given file as text lines.
 	 */
 
-	public static DataSource<Triple> loadTriplesFromDataset(ExecutionEnvironment environment, String filePath) {
+	public static DataSet<Triple> loadTriplesFromDataset(ExecutionEnvironment environment, String filePath) {
 		Preconditions.checkNotNull(filePath, "The file path may not be null.");
 
 		Model model = FileManager.get().loadModel(filePath, null, "TURTLE");
-		List<Statement> statements = model.listStatements().toList();
+		List<Statement> listStatements = model.listStatements().toList();
 
 		List<Triple> dataset = new ArrayList<>();
-		for (Statement s : statements) {
+		for (Statement s : listStatements) {
 			Triple t = s.asTriple();
-			dataset.add(s.asTriple());
+			dataset.add(t);
 		}
 
 		return environment.fromCollection(dataset);

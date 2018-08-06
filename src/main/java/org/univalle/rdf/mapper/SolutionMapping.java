@@ -9,18 +9,19 @@ public class SolutionMapping {
     private static HashMap<Integer, ArrayList<String>> solutionMapping = new HashMap<>();
     public static int indice = 1;
 
-    public static String getKey(int indice_sm_left, int indice_sm_right){
-        String key = "";
-        if(solutionMapping.get(indice_sm_left)!=null && solutionMapping.get(indice_sm_right)!=null) {
+    public static ArrayList<String> getKey(int indice_sm_left, int indice_sm_right){
+        ArrayList<String> listKeys = new ArrayList<>();
+        //System.out.println("left: "+solutionMapping.get(indice_sm_left).toString()+" --- right: "+solutionMapping.get(indice_sm_right).toString());
+        //if(solutionMapping.get(indice_sm_left)!=null && solutionMapping.get(indice_sm_right)!=null) {
             for (String key_left : solutionMapping.get(indice_sm_left)) {
                 for (String key_right : solutionMapping.get(indice_sm_right)) {
                     if (key_left.equals(key_right)) {
-                        key = key_right;
+                        listKeys.add(key_left);
                     }
                 }
             }
-        }
-        return key;
+        //}
+        return listKeys;
     }
 
     public static void join(int indice_sm, int indice_sm_left, int indice_sm_right){

@@ -2,7 +2,7 @@ package org.univalle.rdf.mapper;
 
 import org.apache.jena.graph.Triple;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ConvertTriplePatternGroup {
@@ -10,12 +10,20 @@ public class ConvertTriplePatternGroup {
     public ConvertTriplePatternGroup() { }
 
     public static String joinSolutionMapping (int indice_sm_join, int indice_sm_left, int indice_sm_right) {
-        String key = SolutionMapping.getKey(indice_sm_left, indice_sm_right);
-        String sm = "\t\tDataSet<SolutionMapping> sm"+indice_sm_join+" = sm"+indice_sm_left+".join(sm"+indice_sm_right+")\n" +
-                "\t\t\t.where(new SM_JKS("+key+"))\n" +
-                "\t\t\t.equalTo(new SM_JKS("+key+"))\n" +
-                "\t\t\t.with(new SM_JF("+key+"));" +
-                "\n\n";
+        String sm = "";
+        ArrayList<String> listKeys = SolutionMapping.getKey(indice_sm_left, indice_sm_right);
+        if(listKeys.size()>0) {
+            String keys = JoinKeys.keys(listKeys);
+            sm = "\t\tDataSet<SolutionMapping> sm" + indice_sm_join + " = sm" + indice_sm_left + ".join(sm" + indice_sm_right + ")\n" +
+                    "\t\t\t.where(new SM_JKS(new String[]{"+keys+"}))\n" +
+                    "\t\t\t.equalTo(new SM_JKS(new String[]{"+keys+"}))\n" +
+                    "\t\t\t.with(new SM_JF());" +
+                    "\n\n";
+        } else {
+            sm = "\t\tDataSet<SolutionMapping> sm" + indice_sm_join + " = sm" + indice_sm_left + ".cross(sm" + indice_sm_right + ")\n" +
+                    "\t\t\t.with(new SM_CF());" +
+                    "\n\n";
+        }
         SolutionMapping.join(indice_sm_join, indice_sm_left, indice_sm_right);
         return sm;
     }
