@@ -281,6 +281,16 @@ under the License.
 									<exclude>commons-io:commons-io</exclude>
 									<exclude>commons-cli:commons-cli</exclude>
 									<exclude>org.apache.commons:commons*</exclude>
+									<exclude>com.github.andrewoma.dexx:collection</exclude>
+									<exclude>com.google.protobuf:protobuf-java</exclude>
+									<exclude>org.apache.zookeeper:zookeeper</exclude>
+									<exclude>com.google.code.findbugs:jsr305</exclude>
+
+									<exclude>org.apache.httpcomponents:httpclient*</exclude>
+									<exclude>org.apache.httpcomponents:httpcore*</exclude>
+									<exclude>xerces:xercesImpl</exclude>
+									<exclude>com.github.jsonld-java:jsonld-java</exclude>
+									<exclude>org.slf4j:jcl-over-slf4j</exclude>
 
 								</excludes>
 							</artifactSet>
