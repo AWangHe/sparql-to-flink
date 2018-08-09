@@ -155,6 +155,12 @@ under the License.
 					<version>${log4j.version}</version>
 					<scope>provided</scope>
 				</dependency>
+				<!-- Apache Jena dependencie -->
+				<dependency>
+					<groupId>org.apache.jena</groupId>
+					<artifactId>jena-arq</artifactId>
+					<version>${jena.version}</version>
+				</dependency>
 			</dependencies>
 
 			<build>
@@ -274,6 +280,8 @@ under the License.
 									<exclude>com.github.scopt:scopt_*</exclude>
 									<exclude>commons-io:commons-io</exclude>
 									<exclude>commons-cli:commons-cli</exclude>
+									<exclude>org.apache.commons:commons*</exclude>
+
 								</excludes>
 							</artifactSet>
 							<filters>
