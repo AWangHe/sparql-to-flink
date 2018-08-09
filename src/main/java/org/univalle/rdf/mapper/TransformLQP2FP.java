@@ -24,7 +24,8 @@ public class TransformLQP2FP {
     public String lQP2FP() {
         String fp = "";
 
-        fp += "import org.apache.flink.api.java.DataSet;\n" +
+        fp += "package org.univalle.rdf.out;\n\n" +
+                "import org.apache.flink.api.java.DataSet;\n" +
                 "import org.apache.flink.api.common.operators.Order;\n" +
                 "import org.apache.flink.api.java.ExecutionEnvironment;\n" +
                 "import org.apache.flink.core.fs.FileSystem;\n" +
